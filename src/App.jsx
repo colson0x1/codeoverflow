@@ -4,7 +4,7 @@ import { comments } from './commentData';
 import Card from './Card';
 
 function App() {
-  comments.map((comment) => {
+  return comments.map((comment) => {
     return <Card commentObject={comment} />;
   });
 }

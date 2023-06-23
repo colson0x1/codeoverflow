@@ -1,9 +1,12 @@
 import React from 'react';
 
-import './Style.css';
+import { comments } from './commentData';
+import Card from './Card';
 
 function App() {
-  return <h1>codeOverflow</h1>;
+  comments.map((comment) => {
+    return <Card commentObject={comment} />;
+  });
 }
 
 export default App;
